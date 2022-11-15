@@ -4,6 +4,7 @@ const fs = require("fs");
 const generateMarkdown = require("./Develop/utils/generateMarkdown.js")
 
 // TODO: Create an array of questions for user input
+function init(){
 inquirer
     .prompt([
 
@@ -93,7 +94,7 @@ inquirer
 
 
         }) => {
-            const readMe = `<h1 align=center>${title}</h1>'
+            const readMe = `${title}'
     
     ![License](https://img.shields.io/badge/LICENSE-${license}-pink)
     
@@ -101,13 +102,9 @@ inquirer
     ${description}
    
     ## Table of Contents
-    * [Description](#description)
-    * [Installation](#installation)
-    * [Usage](#usage)
-    * [Tests](#tests)
-    * [License](#license)
-    * [Contribution](#contribution)
-    * [Questions](#questions)
+
+    ## Description
+    ${description}
     
     
     ## Installation
@@ -124,8 +121,8 @@ inquirer
         
     ## Questions
     Find me on:
-    GitHub- (https://github.com/${github})
-    Linkedin - (https://linkedin.com/in/${linkedin})
+    GitHub- https://github.com/${github}
+    Linkedin - https://linkedin.com/in/${linkedin}
 
 
     ## License
@@ -138,4 +135,8 @@ fs.writeFile("./Develop/utils/README.md", readMe, (err) =>
                         : console.log("See utils file for README")
                 );
         }
-    );
+    )};
+
+
+// Function call to initialize app
+init();
