@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/uhdznataly/generate-readme/issues"
   },
-  "homepage": "https://github.com/uhdznataly/generate-readme#readme"
+  "homepage": "https://github.com/uhdznataly/generate-readme#readme",
+  "dependencies": {
+    "inquirer": "^8.2.4"
+  }
 }
