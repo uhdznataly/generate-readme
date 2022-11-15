@@ -132,7 +132,7 @@ inquirer
     License brought to you by ${license}.`;
     
     
-fs.writeFile("./utils/README.md", readMe, (err) =>
+fs.writeFile("./Develop/utils/README.md", readMe, (err) =>
                     err
                         ? console.log(err)
                         : console.log("See utils file for README")
