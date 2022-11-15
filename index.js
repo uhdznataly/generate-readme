@@ -94,9 +94,9 @@ inquirer
 
 
         }) => {
-            const readMe = `${title}'
+            const readMe = `${title}
     
-    ![License](https://img.shields.io/badge/LICENSE-${license}-pink)
+   
     
     ## Description
     ${description}

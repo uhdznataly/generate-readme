@@ -1,32 +1,32 @@
-<h1 align=center>clear</h1>'
+generate readme
     
-    ![License](https://img.shields.io/badge/LICENSE-MIT License-pink)
+   
     
     ## Description
-    kask
+    readme
    
     ## Table of Contents
 
     ## Description
-    kask
+    readme
     
     
     ## Installation
-    fsss
+    readme
 
     ## Usage
-    fsf
+    readme
 
     ## Tests
-    df
+    readme
 
     ## Contribution
-    df
+    no
         
     ## Questions
     Find me on:
-    GitHub- https://github.com/dfdf
-    Linkedin - https://linkedin.com/in/dd
+    GitHub- https://github.com/uhdznataly
+    Linkedin - https://linkedin.com/in/natrod
 
 
     ## License
