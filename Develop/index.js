@@ -9,44 +9,53 @@ inquirer
 
         {
             type: 'input',
-            name: 'Title',
+            name: 'title',
             message: 'What is the title of your project?',
         },
 
         {
             type: 'input',
-            name: 'Description',
-            message: 'Add a description of your project',
+            name: 'description',
+            message: 'Add a description of your project.',
         },
 
         {
             type: 'input',
-            name: 'Installation',
-            message: '',
+            name: 'installation',
+            message: 'Please provide instructions for installation.',
         },
 
         {
             type: 'input',
-            name: 'Usage',
-            message: '',
+            name: 'usage',
+            message: 'Please provide usage information.',
         },
 
         {
             type: 'input',
-            name: 'Test',
-            message: '',
+            name: 'test',
+            message: 'Please describe instructions for the test.',
         },
 
         {
             type: 'input',
-            name: 'Contribution',
-            message: '',
+            name: 'contribution',
+            message: 'Are you accepting contributions on this project?',
         },
 
         {
-            type: 'input',
-            name: 'License',
-            message: '',
+            type: 'checkbox',
+            name: 'license',
+            message: 'What license is being used? ',
+            choices: [
+                "Apache 2.0",
+                "GNU General v3.0",
+                "GNU General v2.0",
+                "MIT License",
+                "Boost Software 1.0",
+                "Eclipse Public 2.0",
+                "Creative Commons Zero v1.0",
+            ],
         },
 
         {
@@ -59,17 +68,56 @@ inquirer
             type: 'input',
             name: 'linkedin',
             message: 'Enter your LinkedIn URL.',
+        },
+
+        {
 
             type: 'input',
-            name: 'linkedin',
-            message: 'Enter your LinkedIn URL.',
-        },])
+            name: 'email',
+            message: 'Enter your Email Address.',
+        },
 
-// TODO: Create a function to write README file
-function writeToFile(fileName, data) { }
+    ])
+    .then(
+        ({
+            title,
+            description,
+            installation,
+            usage,
+            test,
+            contribution,
+            license,
+            github,
+            linkedin,
+            email,
 
-// TODO: Create a function to initialize app
-function init() { }
 
-// Function call to initialize app
-init();
+        }) => {
+            const readME = `<h1 align=center>${title}</h1>`
+
+            ![license](https://img.shields.io/badge/LICENSE-${license}-blue)
+        
+            ## Table of contents
+            * [Description](#description)
+            * [Installation](#installation)
+            * [Usage](#usage)
+            * [Tests](#tests)
+            * [License](#license)
+            * [Contributing](#contributing)
+
+
+
+        }
+    )
+
+
+
+
+
+
+// function writeToFile(fileName, data) { }
+
+// function init() { }
+
+
+// init();
