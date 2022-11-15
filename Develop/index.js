@@ -67,7 +67,7 @@ inquirer
         {
             type: 'input',
             name: 'linkedin',
-            message: 'Enter your LinkedIn URL.',
+            message: 'Enter your LinkedIn ID aspect.',
         },
 
         {
@@ -93,31 +93,49 @@ inquirer
 
 
         }) => {
-            const readME = `<h1 align=center>${title}</h1>`
+            const readMe = `<h1 align=center>${title}</h1>'
+    
+    ![License](https://img.shields.io/badge/LICENSE-${license}-pink)
+    
+    ## Description
+    ${description}
+   
+    ## Table of Contents
+    * [Description](#description)
+    * [Installation](#installation)
+    * [Usage](#usage)
+    * [Tests](#tests)
+    * [License](#license)
+    * [Contribution](#contribution)
+    * [Questions](#questions)
+    
+    
+    ## Installation
+    ${installation}
 
-            ![license](https://img.shields.io/badge/LICENSE-${license}-blue)
+    ## Usage
+    ${usage}
+
+    ## Tests
+    ${test}
+
+    ## Contribution
+    ${contribution}
         
-            ## Table of contents
-            * [Description](#description)
-            * [Installation](#installation)
-            * [Usage](#usage)
-            * [Tests](#tests)
-            * [License](#license)
-            * [Contributing](#contributing)
+    ## Questions
+    Find me on:
+    GitHub- (https://github.com/${github})
+    Linkedin - (https://linkedin.com/in/${linkedin})
 
 
-
+    ## License
+    License brought to you by ${license}.`;
+    
+    
+f.s.writeFile("./utils/README.md", readMe, (err) =>
+                    err
+                        ? console.log(err)
+                        : console.log("See utils file for README")
+                );
         }
-    )
-
-
-
-
-
-
-// function writeToFile(fileName, data) { }
-
-// function init() { }
-
-
-// init();
+    );
