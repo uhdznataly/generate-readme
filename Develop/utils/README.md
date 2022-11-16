@@ -1,33 +1,37 @@
-generate readme
+./Develop/utils/      
+
+
+[![License](https://img.shields.io/badge/License-MIT-blue.svg)]
+
+# dd
     
-   
+      
+## Description
+ffd
+
+## Table of Contents
+
+## Description
+ffd
+
+
+## Installation
+dfs
+
+## Usage
+sfs
+
+## Tests
+sf
+
+## Contribution
+sf
     
-    ## Description
-    readme
-   
-    ## Table of Contents
-
-    ## Description
-    readme
-    
-    
-    ## Installation
-    readme
-
-    ## Usage
-    readme
-
-    ## Tests
-    readme
-
-    ## Contribution
-    no
-        
-    ## Questions
-    Find me on:
-    GitHub- https://github.com/uhdznataly
-    Linkedin - https://linkedin.com/in/natrod
+## Questions
+Find me on:
+GitHub- https://github.com/ss
+Linkedin - https://linkedin.com/in/dfs
 
 
-    ## License
-    License brought to you by MIT License.
+## License
+License brought to you by MIT.

@@ -50,10 +50,10 @@ inquirer
             message: 'What license is being used? ',
             choices: [
                 "Apache 2.0",
-                "GNU General v3.0",
-                "GNU General v2.0",
-                "MIT License",
-                "Boost Software 1.0",
+                "GNU 3.0",
+                "GNU 2.0",
+                "MIT",
+                "Boost 1.0",
                 "Eclipse Public 2.0",
                 "Creative Commons Zero v1.0",
             ],
@@ -94,42 +94,52 @@ inquirer
 
 
         }) => {
-            const readMe = `${title}
-    
-   
-    
-    ## Description
-    ${description}
-   
-    ## Table of Contents
-
-    ## Description
-    ${description}
-    
-    
-    ## Installation
-    ${installation}
-
-    ## Usage
-    ${usage}
-
-    ## Tests
-    ${test}
-
-    ## Contribution
-    ${contribution}
-        
-    ## Questions
-    Find me on:
-    GitHub- https://github.com/${github}
-    Linkedin - https://linkedin.com/in/${linkedin}
+            const readMe = `
+            
 
 
-    ## License
-    License brought to you by ${license}.`;
+![License](https://img.shields.io/badge/License-${license}-blue.svg)
+
+# ${title}
+    
+
+## Table of Contents
+
+* [description](#description)
+* [installation](#installation)
+* [usage](#usage)
+* [test](#test)
+* [contribution](#contribution)
+* [license](#license)
+* [questions](#questions)
+* [test](#test)
+
+
+## Description
+${description}
+
+## Installation
+${installation}
+
+## Usage
+${usage}
+
+## Tests
+${test}
+
+## Contribution
+${contribution}
+    
+## Questions
+Find me on:
+GitHub- https://github.com/${github}
+Linkedin - https://linkedin.com/in/${linkedin}
+
+## License
+License brought to you by ${license}.`;
     
     
-fs.writeFile("./Develop/utils/README.md", readMe, (err) =>
+fs.writeFile("README.md", readMe, (err) =>
                     err
                         ? console.log(err)
                         : console.log("See utils file for README")
