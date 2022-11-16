@@ -41,7 +41,7 @@ inquirer
         {
             type: 'input',
             name: 'contribution',
-            message: 'Are you accepting contributions on this project?',
+            message: 'Please name the project owner(s) and if your are accepting any contributors.',
         },
 
         {
@@ -132,14 +132,15 @@ ${contribution}
     
 ## Questions
 Find me on:
-GitHub- https://github.com/${github}
-Linkedin - https://linkedin.com/in/${linkedin}
+GitHub- https://github.com/${github},
+Linkedin - https://linkedin.com/in/${linkedin},
+Email- ${email}
 
 ## License
 License brought to you by ${license}.`;
     
     
-fs.writeFile("README.md", readMe, (err) =>
+fs.writeFile("./Develop/utils/README.md", readMe, (err) =>
                     err
                         ? console.log(err)
                         : console.log("See utils file for README")

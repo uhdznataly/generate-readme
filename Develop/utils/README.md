@@ -1,37 +1,44 @@
-./Develop/utils/      
+
+            
 
 
-[![License](https://img.shields.io/badge/License-MIT-blue.svg)]
+![License](https://img.shields.io/badge/License-MIT-blue.svg)
 
-# dd
+# generate readme
     
-      
-## Description
-ffd
 
 ## Table of Contents
 
-## Description
-ffd
+* [description](#description)
+* [installation](#installation)
+* [usage](#usage)
+* [test](#test)
+* [contribution](#contribution)
+* [license](#license)
+* [questions](#questions)
+* [test](#test)
 
+
+## Description
+an app to generate readme for future use
 
 ## Installation
-dfs
+node js, inquirer
 
 ## Usage
-sfs
+using the terminal to answer questions to generate readme
 
 ## Tests
-sf
+none
 
 ## Contribution
-sf
+Nataly Rodriguez, suggestions welcome
     
 ## Questions
 Find me on:
-GitHub- https://github.com/ss
-Linkedin - https://linkedin.com/in/dfs
-
+GitHub- https://github.com/uhdznataly,
+Linkedin - https://linkedin.com/in/natrod,
+Email- uhdznataly@yahoo.com
 
 ## License
 License brought to you by MIT.

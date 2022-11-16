@@ -36,6 +36,10 @@ Node js is the main application being used and since the inquirer package was in
 
 The fs.writeFile allows your answers to be imported to your README in the given file you have chosen.
 
+https://watch.screencastify.com/v/OxCv7RPu7N7uYldStVjF 
+
+
+
 ## Tests
 coming soon
 
